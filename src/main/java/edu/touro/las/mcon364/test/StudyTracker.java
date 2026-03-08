@@ -1,4 +1,4 @@
-package edu.touro.las.mcon364.midterm;
+package edu.touro.las.mcon364.test;
 
 import java.util.*;
 

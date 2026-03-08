@@ -1,4 +1,4 @@
-package edu.touro.las.mcon364.midterm;
+package edu.touro.las.mcon364.test;
 
 import java.time.LocalDate;
 import java.util.List;
