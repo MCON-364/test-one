@@ -15,7 +15,13 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21
+          java-version: '21'
+          cache: maven
+
+      - name: Copy hidden autograder into test sources
+        run: |
+          mkdir -p src/test/java/edu/touro/las/mcon364/midterm
+          cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/midterm/MidtermAutograderTest.java
 
       - name: Run GitHub Classroom Autograder
         uses: education/autograding@v1
