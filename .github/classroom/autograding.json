@@ -2,7 +2,6 @@
   "tests": [
     {
       "name": "Problem 01 - currentMonthSupplier",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem01_currentMonthSupplier_returnsCurrentMonth test",
       "input": "",
       "output": "",
@@ -12,7 +11,6 @@
     },
     {
       "name": "Problem 02 - longerThanFive",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem02_longerThanFive_worksForShortAndLongStrings test",
       "input": "",
       "output": "",
@@ -22,7 +20,6 @@
     },
     {
       "name": "Problem 03 - positiveAndEven",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem03_positiveAndEven_usesExpectedLogic test",
       "input": "",
       "output": "",
@@ -32,7 +29,6 @@
     },
     {
       "name": "Problem 04 - wordCounter",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem04_wordCounter_countsWordsAndHandlesBlank test",
       "input": "",
       "output": "",
@@ -42,7 +38,6 @@
     },
     {
       "name": "Problem 05 - cleanLabels",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem05_cleanLabels_filtersTrimsAndUppercases test",
       "input": "",
       "output": "",
@@ -52,7 +47,6 @@
     },
     {
       "name": "Problem 06 - sortedCourseNames",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem06_getSortedCourseNames_returnsAlphabeticalNames test",
       "input": "",
       "output": "",
@@ -62,7 +56,6 @@
     },
     {
       "name": "Problem 07 - countScoresAtLeast",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem07_countScoresAtLeast_countsAcrossAllCourses test",
       "input": "",
       "output": "",
@@ -72,7 +65,6 @@
     },
     {
       "name": "Problem 08 - firstLongWord",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem08_firstLongWord_returnsOptionalResult test",
       "input": "",
       "output": "",
@@ -82,7 +74,6 @@
     },
     {
       "name": "Problem 09 - squareAll",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem09_squareAll_returnsSquaredValues test",
       "input": "",
       "output": "",
@@ -92,7 +83,6 @@
     },
     {
       "name": "Problem 10 - averagePassingScore",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem10_averagePassingScore_usesOnlyPassingValues test",
       "input": "",
       "output": "",
@@ -102,7 +92,6 @@
     },
     {
       "name": "Problem 11 - addLearner",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem11_addLearner_addsNewLearnerAndRejectsDuplicate test",
       "input": "",
       "output": "",
@@ -112,7 +101,6 @@
     },
     {
       "name": "Problem 12 - addScore",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem12_addScore_addsOnlyForExistingLearner test",
       "input": "",
       "output": "",
@@ -122,7 +110,6 @@
     },
     {
       "name": "Problem 13 - averageFor",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem13_averageFor_returnsOptionalAverage test",
       "input": "",
       "output": "",
@@ -132,7 +119,6 @@
     },
     {
       "name": "Problem 14 - letterBandFor",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem14_letterBandFor_mapsAverageToLetter test",
       "input": "",
       "output": "",
@@ -142,7 +128,6 @@
     },
     {
       "name": "Problem 15 - undoLastChange",
-      "setup": "mkdir -p src/test/java/edu/touro/las/mcon364/test && cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java",
       "run": "mvn -q -B -ntp -Dtest=edu.touro.las.mcon364.test.MidtermAutograderTest#problem15_undoLastChange_revertsMostRecentMutation test",
       "input": "",
       "output": "",

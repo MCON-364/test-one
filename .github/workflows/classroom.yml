@@ -20,8 +20,8 @@ jobs:
 
       - name: Copy hidden autograder into test sources
         run: |
-          mkdir -p src/test/java/edu/touro/las/mcon364/midterm
-          cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/midterm/MidtermAutograderTest.java
+          mkdir -p src/test/java/edu/touro/las/mcon364/test
+          cp .github/autograder/MidtermAutograderTest.java src/test/java/edu/touro/las/mcon364/test/MidtermAutograderTest.java
 
       - name: Run GitHub Classroom Autograder
         uses: education/autograding@v1
