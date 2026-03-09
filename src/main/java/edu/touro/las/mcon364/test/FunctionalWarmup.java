@@ -1,6 +1,7 @@
 package edu.touro.las.mcon364.test;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -13,7 +14,7 @@ public class FunctionalWarmup {
      * Return a Supplier that gives the current month number (1-12).
      */
     public static Supplier<Integer> currentMonthSupplier() {
-        throw new UnsupportedOperationException();
+        return () -> LocalDate.now().getMonthValue();
     }
 
     /**
@@ -22,7 +23,7 @@ public class FunctionalWarmup {
      * has more than 5 characters.
      */
     public static Predicate<String> longerThanFive() {
-        throw new UnsupportedOperationException();
+        return s -> s.length() > 5;
     }
 
     /**
@@ -34,7 +35,9 @@ public class FunctionalWarmup {
      * Prefer chaining smaller predicates.
      */
     public static Predicate<Integer> positiveAndEven() {
-        throw new UnsupportedOperationException();
+        Predicate<Integer> isPositive = n -> n > 0;
+        Predicate<Integer> isEven = n -> n % 2 == 0;
+        return isPositive.and(isEven);
     }
 
     /**
@@ -44,10 +47,11 @@ public class FunctionalWarmup {
      * Notes:
      * - Trim first.
      * - Blank strings should return 0.
-     * - Words are separated by one or more spaces.
+     * - Words are separated by one or more spaces (use can use regex "\\s+")
+     *
      */
     public static Function<String, Integer> wordCounter() {
-        throw new UnsupportedOperationException();
+        return s -> s.trim().isEmpty() ? 0 : s.trim().split("\\s+").length;
     }
 
     /**
@@ -62,6 +66,7 @@ public class FunctionalWarmup {
      * ["  math ", "", " java", "  "] -> ["MATH", "JAVA"]
      */
     public static List<String> cleanLabels(List<String> labels) {
-        throw new UnsupportedOperationException();
+        Predicate<String> skipEmpty = s -> s.length() > 0;
+        return labels.stream().map(String::trim).filter(skipEmpty).map(String::toUpperCase).toList();
     }
 }
